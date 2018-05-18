@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32EFF8EE840E6952E3CF0872 /* Pods_KKWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32422870BEABF3B2D0C271B5 /* Pods_KKWallet.framework */; };
+		A8809BEB20AD7D13005134A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809BEA20AD7D13005134A5 /* AppDelegate.swift */; };
+		A8809BED20AD7D13005134A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809BEC20AD7D13005134A5 /* ViewController.swift */; };
+		A8809BF020AD7D13005134A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8809BEE20AD7D13005134A5 /* Main.storyboard */; };
+		A8809BF220AD7D15005134A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8809BF120AD7D15005134A5 /* Assets.xcassets */; };
+		A8809BF520AD7D15005134A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8809BF320AD7D15005134A5 /* LaunchScreen.storyboard */; };
+		A8809C0D20AD80FA005134A5 /* Scrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809BFE20AD80FA005134A5 /* Scrypt.swift */; };
+		A8809C0E20AD80FA005134A5 /* DerivationPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809C0020AD80FA005134A5 /* DerivationPath.swift */; };
+		A8809C0F20AD80FA005134A5 /* DerivationPath.Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809C0120AD80FA005134A5 /* DerivationPath.Index.swift */; };
+		A8809C1020AD80FA005134A5 /* HDKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809C0220AD80FA005134A5 /* HDKey.swift */; };
+		A8809C1120AD80FA005134A5 /* Mnemonic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809C0320AD80FA005134A5 /* Mnemonic.swift */; };
+		A8809C1220AD80FA005134A5 /* MnemonicWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809C0420AD80FA005134A5 /* MnemonicWords.swift */; };
+		A8809C1320AD80FA005134A5 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809C0520AD80FA005134A5 /* Wallet.swift */; };
+		A8809C1420AD80FA005134A5 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809C0720AD80FA005134A5 /* Account.swift */; };
+		A8809C1520AD80FA005134A5 /* KeystoreKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809C0820AD80FA005134A5 /* KeystoreKey.swift */; };
+		A8809C1620AD80FA005134A5 /* ScryptParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809C0920AD80FA005134A5 /* ScryptParams.swift */; };
+		A8809C1720AD80FA005134A5 /* KeyStore.Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809C0A20AD80FA005134A5 /* KeyStore.Error.swift */; };
+		A8809C1820AD80FA005134A5 /* KeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809C0B20AD80FA005134A5 /* KeyStore.swift */; };
+		A8809C1920AD80FA005134A5 /* KeystoreKeyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809C0C20AD80FA005134A5 /* KeystoreKeyHeader.swift */; };
+		A8809C1C20AD827C005134A5 /* CreateWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809C1A20AD827C005134A5 /* CreateWalletViewController.swift */; };
+		A8809C1D20AD827C005134A5 /* CreateWalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8809C1B20AD827C005134A5 /* CreateWalletViewController.xib */; };
+		A8809C2020AD8349005134A5 /* ImportWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809C1E20AD8349005134A5 /* ImportWalletViewController.swift */; };
+		A8809C2120AD8349005134A5 /* ImportWalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8809C1F20AD8349005134A5 /* ImportWalletViewController.xib */; };
+		A8809C2420AD8BC6005134A5 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809C2220AD8BC6005134A5 /* WalletViewController.swift */; };
+		A8809C2520AD8BC6005134A5 /* WalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8809C2320AD8BC6005134A5 /* WalletViewController.xib */; };
+		A8809C2920AD8D9F005134A5 /* WalletTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809C2820AD8D9F005134A5 /* WalletTools.swift */; };
+		A8809C2D20AD8E81005134A5 /* ImportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809C2A20AD8E81005134A5 /* ImportType.swift */; };
+		A8809C2E20AD8E81005134A5 /* ImportResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809C2B20AD8E81005134A5 /* ImportResult.swift */; };
+		A8809C2F20AD8E81005134A5 /* ImportError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809C2C20AD8E81005134A5 /* ImportError.swift */; };
+		A8809C3220AD9F1F005134A5 /* ConstantApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8809C3120AD9F1F005134A5 /* ConstantApi.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		32422870BEABF3B2D0C271B5 /* Pods_KKWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KKWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8209D53EBEEE6AD431DB76E3 /* Pods-KKWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKWallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-KKWallet/Pods-KKWallet.release.xcconfig"; sourceTree = "<group>"; };
+		A8809BE720AD7D13005134A5 /* KKWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8809BEA20AD7D13005134A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A8809BEC20AD7D13005134A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A8809BEF20AD7D13005134A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A8809BF120AD7D15005134A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8809BF420AD7D15005134A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A8809BF620AD7D15005134A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8809BFE20AD80FA005134A5 /* Scrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scrypt.swift; sourceTree = "<group>"; };
+		A8809C0020AD80FA005134A5 /* DerivationPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DerivationPath.swift; sourceTree = "<group>"; };
+		A8809C0120AD80FA005134A5 /* DerivationPath.Index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DerivationPath.Index.swift; sourceTree = "<group>"; };
+		A8809C0220AD80FA005134A5 /* HDKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDKey.swift; sourceTree = "<group>"; };
+		A8809C0320AD80FA005134A5 /* Mnemonic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mnemonic.swift; sourceTree = "<group>"; };
+		A8809C0420AD80FA005134A5 /* MnemonicWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MnemonicWords.swift; sourceTree = "<group>"; };
+		A8809C0520AD80FA005134A5 /* Wallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		A8809C0620AD80FA005134A5 /* TrustKeystore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrustKeystore.h; sourceTree = "<group>"; };
+		A8809C0720AD80FA005134A5 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		A8809C0820AD80FA005134A5 /* KeystoreKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeystoreKey.swift; sourceTree = "<group>"; };
+		A8809C0920AD80FA005134A5 /* ScryptParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScryptParams.swift; sourceTree = "<group>"; };
+		A8809C0A20AD80FA005134A5 /* KeyStore.Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyStore.Error.swift; sourceTree = "<group>"; };
+		A8809C0B20AD80FA005134A5 /* KeyStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyStore.swift; sourceTree = "<group>"; };
+		A8809C0C20AD80FA005134A5 /* KeystoreKeyHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeystoreKeyHeader.swift; sourceTree = "<group>"; };
+		A8809C1A20AD827C005134A5 /* CreateWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletViewController.swift; sourceTree = "<group>"; };
+		A8809C1B20AD827C005134A5 /* CreateWalletViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateWalletViewController.xib; sourceTree = "<group>"; };
+		A8809C1E20AD8349005134A5 /* ImportWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportWalletViewController.swift; sourceTree = "<group>"; };
+		A8809C1F20AD8349005134A5 /* ImportWalletViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImportWalletViewController.xib; sourceTree = "<group>"; };
+		A8809C2220AD8BC6005134A5 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		A8809C2320AD8BC6005134A5 /* WalletViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletViewController.xib; sourceTree = "<group>"; };
+		A8809C2820AD8D9F005134A5 /* WalletTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTools.swift; sourceTree = "<group>"; };
+		A8809C2A20AD8E81005134A5 /* ImportType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportType.swift; sourceTree = "<group>"; };
+		A8809C2B20AD8E81005134A5 /* ImportResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportResult.swift; sourceTree = "<group>"; };
+		A8809C2C20AD8E81005134A5 /* ImportError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportError.swift; sourceTree = "<group>"; };
+		A8809C3120AD9F1F005134A5 /* ConstantApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantApi.swift; sourceTree = "<group>"; };
+		AB68C73224F7DFA360165A55 /* Pods-KKWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKWallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KKWallet/Pods-KKWallet.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8809BE420AD7D13005134A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32EFF8EE840E6952E3CF0872 /* Pods_KKWallet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81C46BE1D40A000B9A78A0A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32422870BEABF3B2D0C271B5 /* Pods_KKWallet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88721965948F89BA59A4095A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB68C73224F7DFA360165A55 /* Pods-KKWallet.debug.xcconfig */,
+				8209D53EBEEE6AD431DB76E3 /* Pods-KKWallet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A8809BDE20AD7D13005134A5 = {
+			isa = PBXGroup;
+			children = (
+				A8809BE920AD7D13005134A5 /* KKWallet */,
+				A8809BE820AD7D13005134A5 /* Products */,
+				88721965948F89BA59A4095A /* Pods */,
+				81C46BE1D40A000B9A78A0A1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A8809BE820AD7D13005134A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8809BE720AD7D13005134A5 /* KKWallet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8809BE920AD7D13005134A5 /* KKWallet */ = {
+			isa = PBXGroup;
+			children = (
+				A8809C3020AD9EFE005134A5 /* Constant */,
+				A8809C2720AD8D5F005134A5 /* Controllers */,
+				A8809C2620AD8D54005134A5 /* WalletTools */,
+				A8809BFC20AD80A2005134A5 /* Libs */,
+				A8809BEA20AD7D13005134A5 /* AppDelegate.swift */,
+				A8809BEC20AD7D13005134A5 /* ViewController.swift */,
+				A8809BEE20AD7D13005134A5 /* Main.storyboard */,
+				A8809BF120AD7D15005134A5 /* Assets.xcassets */,
+				A8809BF320AD7D15005134A5 /* LaunchScreen.storyboard */,
+				A8809BF620AD7D15005134A5 /* Info.plist */,
+			);
+			path = KKWallet;
+			sourceTree = "<group>";
+		};
+		A8809BFC20AD80A2005134A5 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				A8809BFD20AD80DF005134A5 /* TrustKeystore */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		A8809BFD20AD80DF005134A5 /* TrustKeystore */ = {
+			isa = PBXGroup;
+			children = (
+				A8809C0720AD80FA005134A5 /* Account.swift */,
+				A8809C0A20AD80FA005134A5 /* KeyStore.Error.swift */,
+				A8809C0B20AD80FA005134A5 /* KeyStore.swift */,
+				A8809C0820AD80FA005134A5 /* KeystoreKey.swift */,
+				A8809C0C20AD80FA005134A5 /* KeystoreKeyHeader.swift */,
+				A8809BFE20AD80FA005134A5 /* Scrypt.swift */,
+				A8809C0920AD80FA005134A5 /* ScryptParams.swift */,
+				A8809C0620AD80FA005134A5 /* TrustKeystore.h */,
+				A8809BFF20AD80FA005134A5 /* Wallet */,
+			);
+			path = TrustKeystore;
+			sourceTree = "<group>";
+		};
+		A8809BFF20AD80FA005134A5 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				A8809C0020AD80FA005134A5 /* DerivationPath.swift */,
+				A8809C0120AD80FA005134A5 /* DerivationPath.Index.swift */,
+				A8809C0220AD80FA005134A5 /* HDKey.swift */,
+				A8809C0320AD80FA005134A5 /* Mnemonic.swift */,
+				A8809C0420AD80FA005134A5 /* MnemonicWords.swift */,
+				A8809C0520AD80FA005134A5 /* Wallet.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		A8809C2620AD8D54005134A5 /* WalletTools */ = {
+			isa = PBXGroup;
+			children = (
+				A8809C2820AD8D9F005134A5 /* WalletTools.swift */,
+				A8809C2C20AD8E81005134A5 /* ImportError.swift */,
+				A8809C2B20AD8E81005134A5 /* ImportResult.swift */,
+				A8809C2A20AD8E81005134A5 /* ImportType.swift */,
+			);
+			path = WalletTools;
+			sourceTree = "<group>";
+		};
+		A8809C2720AD8D5F005134A5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A8809C1A20AD827C005134A5 /* CreateWalletViewController.swift */,
+				A8809C1B20AD827C005134A5 /* CreateWalletViewController.xib */,
+				A8809C1E20AD8349005134A5 /* ImportWalletViewController.swift */,
+				A8809C1F20AD8349005134A5 /* ImportWalletViewController.xib */,
+				A8809C2220AD8BC6005134A5 /* WalletViewController.swift */,
+				A8809C2320AD8BC6005134A5 /* WalletViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A8809C3020AD9EFE005134A5 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				A8809C3120AD9F1F005134A5 /* ConstantApi.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8809BE620AD7D13005134A5 /* KKWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8809BF920AD7D15005134A5 /* Build configuration list for PBXNativeTarget "KKWallet" */;
+			buildPhases = (
+				8FAEDCAAAE9208B0F6D29ACC /* [CP] Check Pods Manifest.lock */,
+				A8809BE320AD7D13005134A5 /* Sources */,
+				A8809BE420AD7D13005134A5 /* Frameworks */,
+				A8809BE520AD7D13005134A5 /* Resources */,
+				05F85DC66EA0EAC26ECB5491 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KKWallet;
+			productName = KKWallet;
+			productReference = A8809BE720AD7D13005134A5 /* KKWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8809BDF20AD7D13005134A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Caomaoxin;
+				TargetAttributes = {
+					A8809BE620AD7D13005134A5 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = A8809BE220AD7D13005134A5 /* Build configuration list for PBXProject "KKWallet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8809BDE20AD7D13005134A5;
+			productRefGroup = A8809BE820AD7D13005134A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8809BE620AD7D13005134A5 /* KKWallet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8809BE520AD7D13005134A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8809BF520AD7D15005134A5 /* LaunchScreen.storyboard in Resources */,
+				A8809BF220AD7D15005134A5 /* Assets.xcassets in Resources */,
+				A8809BF020AD7D13005134A5 /* Main.storyboard in Resources */,
+				A8809C1D20AD827C005134A5 /* CreateWalletViewController.xib in Resources */,
+				A8809C2120AD8349005134A5 /* ImportWalletViewController.xib in Resources */,
+				A8809C2520AD8BC6005134A5 /* WalletViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05F85DC66EA0EAC26ECB5491 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KKWallet/Pods-KKWallet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TrezorCrypto/TrezorCrypto.framework",
+				"${BUILT_PRODUCTS_DIR}/TrustCore/TrustCore.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TrezorCrypto.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TrustCore.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KKWallet/Pods-KKWallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FAEDCAAAE9208B0F6D29ACC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KKWallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8809BE320AD7D13005134A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8809C0D20AD80FA005134A5 /* Scrypt.swift in Sources */,
+				A8809C0F20AD80FA005134A5 /* DerivationPath.Index.swift in Sources */,
+				A8809C1620AD80FA005134A5 /* ScryptParams.swift in Sources */,
+				A8809C0E20AD80FA005134A5 /* DerivationPath.swift in Sources */,
+				A8809C1220AD80FA005134A5 /* MnemonicWords.swift in Sources */,
+				A8809C2420AD8BC6005134A5 /* WalletViewController.swift in Sources */,
+				A8809C3220AD9F1F005134A5 /* ConstantApi.swift in Sources */,
+				A8809C1820AD80FA005134A5 /* KeyStore.swift in Sources */,
+				A8809C2F20AD8E81005134A5 /* ImportError.swift in Sources */,
+				A8809C1020AD80FA005134A5 /* HDKey.swift in Sources */,
+				A8809C2D20AD8E81005134A5 /* ImportType.swift in Sources */,
+				A8809C1420AD80FA005134A5 /* Account.swift in Sources */,
+				A8809C1920AD80FA005134A5 /* KeystoreKeyHeader.swift in Sources */,
+				A8809C1720AD80FA005134A5 /* KeyStore.Error.swift in Sources */,
+				A8809C1120AD80FA005134A5 /* Mnemonic.swift in Sources */,
+				A8809C2920AD8D9F005134A5 /* WalletTools.swift in Sources */,
+				A8809C2E20AD8E81005134A5 /* ImportResult.swift in Sources */,
+				A8809C1320AD80FA005134A5 /* Wallet.swift in Sources */,
+				A8809BED20AD7D13005134A5 /* ViewController.swift in Sources */,
+				A8809C1520AD80FA005134A5 /* KeystoreKey.swift in Sources */,
+				A8809C1C20AD827C005134A5 /* CreateWalletViewController.swift in Sources */,
+				A8809BEB20AD7D13005134A5 /* AppDelegate.swift in Sources */,
+				A8809C2020AD8349005134A5 /* ImportWalletViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A8809BEE20AD7D13005134A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8809BEF20AD7D13005134A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A8809BF320AD7D15005134A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8809BF420AD7D15005134A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8809BF720AD7D15005134A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A8809BF820AD7D15005134A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8809BFA20AD7D15005134A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB68C73224F7DFA360165A55 /* Pods-KKWallet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3C3988H5TD;
+				INFOPLIST_FILE = KKWallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CMX.KKWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8809BFB20AD7D15005134A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8209D53EBEEE6AD431DB76E3 /* Pods-KKWallet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3C3988H5TD;
+				INFOPLIST_FILE = KKWallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CMX.KKWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8809BE220AD7D13005134A5 /* Build configuration list for PBXProject "KKWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8809BF720AD7D15005134A5 /* Debug */,
+				A8809BF820AD7D15005134A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8809BF920AD7D15005134A5 /* Build configuration list for PBXNativeTarget "KKWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8809BFA20AD7D15005134A5 /* Debug */,
+				A8809BFB20AD7D15005134A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8809BDF20AD7D13005134A5 /* Project object */;
+}

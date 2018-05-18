@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WalletViewController" customModule="KKWallet" customModuleProvider="target">
+            <connections>
+                <outlet property="addressLabel" destination="uyX-vu-Czg" id="hYJ-ZX-B8Q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyX-vu-Czg">
+                    <rect key="frame" x="20" y="121" width="335" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="钱包地址" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVg-fa-Aqi">
+                    <rect key="frame" x="19.5" y="80" width="335" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uyX-vu-Czg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EB8-ci-Loi"/>
+                <constraint firstItem="KVg-fa-Aqi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="KYO-X1-lbL"/>
+                <constraint firstItem="uyX-vu-Czg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Mfp-ev-c03"/>
+                <constraint firstItem="KVg-fa-Aqi" firstAttribute="width" secondItem="uyX-vu-Czg" secondAttribute="width" id="NLh-Fu-VJN"/>
+                <constraint firstItem="uyX-vu-Czg" firstAttribute="top" secondItem="KVg-fa-Aqi" secondAttribute="bottom" constant="20" id="PoG-FN-IdL"/>
+                <constraint firstItem="KVg-fa-Aqi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="T2S-aB-WZm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uyX-vu-Czg" secondAttribute="trailing" constant="20" id="UFG-A2-7Yp"/>
+                <constraint firstItem="uyX-vu-Czg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="y1w-yP-iaz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

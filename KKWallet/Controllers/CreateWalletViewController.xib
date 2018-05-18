@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateWalletViewController" customModule="KKWallet" customModuleProvider="target">
+            <connections>
+                <outlet property="passwordTF" destination="974-qM-52v" id="hQF-oe-ewo"/>
+                <outlet property="repeatPasswordTF" destination="Pnz-Av-RYr" id="oot-xT-jFI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="974-qM-52v">
+                    <rect key="frame" x="20" y="207.5" width="335" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="重复密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pnz-Av-RYr">
+                    <rect key="frame" x="20" y="257.5" width="335" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfZ-RG-fz3">
+                    <rect key="frame" x="20" y="337.5" width="335" height="34"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="创建"/>
+                    <connections>
+                        <action selector="createWallet:" destination="-1" eventType="touchUpInside" id="NkZ-OM-2gn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="974-qM-52v" secondAttribute="trailing" constant="20" id="1Dg-Er-BwD"/>
+                <constraint firstItem="Pnz-Av-RYr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="47P-8Q-Ez9"/>
+                <constraint firstItem="VfZ-RG-fz3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6i2-bS-tN5"/>
+                <constraint firstItem="VfZ-RG-fz3" firstAttribute="top" secondItem="Pnz-Av-RYr" secondAttribute="bottom" constant="50" id="A3H-pl-rWl"/>
+                <constraint firstItem="Pnz-Av-RYr" firstAttribute="top" secondItem="974-qM-52v" secondAttribute="bottom" constant="20" id="Js5-4Z-dfz"/>
+                <constraint firstItem="974-qM-52v" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UR5-oj-dRJ"/>
+                <constraint firstItem="Pnz-Av-RYr" firstAttribute="width" secondItem="974-qM-52v" secondAttribute="width" id="V3r-Ov-CuZ"/>
+                <constraint firstItem="VfZ-RG-fz3" firstAttribute="width" secondItem="Pnz-Av-RYr" secondAttribute="width" id="W09-wF-81X"/>
+                <constraint firstItem="974-qM-52v" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ZHe-6l-cs4"/>
+                <constraint firstItem="974-qM-52v" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="2:3" id="lnM-Rg-fRM"/>
+                <constraint firstItem="Pnz-Av-RYr" firstAttribute="height" secondItem="974-qM-52v" secondAttribute="height" id="pVp-76-UZa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

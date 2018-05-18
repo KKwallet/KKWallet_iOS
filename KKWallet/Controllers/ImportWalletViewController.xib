@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImportWalletViewController" customModule="KKWallet" customModuleProvider="target">
+            <connections>
+                <outlet property="segment" destination="BpG-JF-9z3" id="ln9-Ag-YHA"/>
+                <outlet property="textView" destination="JQC-Xj-6MV" id="OoB-rt-8Pf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BpG-JF-9z3">
+                    <rect key="frame" x="133" y="40" width="109" height="29"/>
+                    <segments>
+                        <segment title="助记词"/>
+                        <segment title="私钥"/>
+                    </segments>
+                    <connections>
+                        <action selector="segmentAction:" destination="-1" eventType="valueChanged" id="1aN-gZ-qrM"/>
+                    </connections>
+                </segmentedControl>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQC-Xj-6MV">
+                    <rect key="frame" x="20" y="98" width="335" height="150"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="VDV-It-E53"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYQ-0Z-wWw">
+                    <rect key="frame" x="19.5" y="298" width="335" height="34"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="导入"/>
+                    <connections>
+                        <action selector="importWallet:" destination="-1" eventType="touchUpInside" id="Fbs-Hk-Ch2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JQC-Xj-6MV" firstAttribute="top" secondItem="BpG-JF-9z3" secondAttribute="bottom" constant="30" id="9vw-ra-Mcj"/>
+                <constraint firstItem="hYQ-0Z-wWw" firstAttribute="width" secondItem="JQC-Xj-6MV" secondAttribute="width" id="GYk-S8-xxq"/>
+                <constraint firstItem="JQC-Xj-6MV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="TWH-I3-xtx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JQC-Xj-6MV" secondAttribute="trailing" constant="20" id="UrK-JP-kQF"/>
+                <constraint firstItem="BpG-JF-9z3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YW3-y8-Avi"/>
+                <constraint firstItem="hYQ-0Z-wWw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cK1-GE-3vi"/>
+                <constraint firstItem="BpG-JF-9z3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="hpT-jf-L2v"/>
+                <constraint firstItem="hYQ-0Z-wWw" firstAttribute="top" secondItem="JQC-Xj-6MV" secondAttribute="bottom" constant="50" id="lp9-yG-IXE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

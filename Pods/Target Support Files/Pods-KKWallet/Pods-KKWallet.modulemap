@@ -1,0 +1,6 @@
+framework module Pods_KKWallet {
+  umbrella header "Pods-KKWallet-umbrella.h"
+
+  export *
+  module * { export * }
+}
